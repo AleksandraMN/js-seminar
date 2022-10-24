@@ -1,0 +1,51 @@
+<!-- Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции.
+ -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<script language="JavaScript">
+
+		const name = prompt("Привет, как вас зовут?", "");
+		alert(`Привет, ${name}!`); 
+			
+	</script>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="more">
+
+		<script language="JavaScript">
+			
+			document.write(`<h3>Привет, ${name}!</h3>`);
+			document.write("<h3>Эта страница создана для вас!</h3>"); 
+			
+			function showMessage () {
+			let message=`Хорошего дня, ${name}!`;
+			alert(message); 
+		}
+		showMessage();
+
+		</script>
+	</div>
+
+	<div class="my-flex-container">
+		<div class="my-flex-block">
+			<img src="photo.jpeg" alt="Фотография1">
+		</div>
+		<div class="my-flex-block">
+			<img src="photo2.jpeg" alt="Фотография2">
+		</div>
+		<div class="my-flex-block">
+			<img src="photo3.jpeg" alt="Фотография3">
+		</div>
+	</div>
+
+</body>
+</html>
